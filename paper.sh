@@ -1,6 +1,6 @@
 #!/bin/bash
-clear
 
+clear
 #Take name of server
 read -p "Enter server folder name: " servername
 read -p "Enter amount of RAM (MB>500) to assign to your server: " ram
@@ -11,9 +11,7 @@ if [[ -d  projects/minecraft/$servername ]]; then
     echo "[ERROR] server with that name already exists"
     echo "[ERROR] aborting script, choose a different name"
     exit
-
 else
-
     #Create directory and enter if doesn't exist
     echo "Creating server directory..."
     mkdir projects/minecraft/$servername
